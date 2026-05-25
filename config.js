@@ -11,7 +11,7 @@ exports.default = {
     maxListeners: 15,
     customUserDataDir: './userDataDir/',
     webhook: {
-        url: process.env.WEBHOOK_URL || null,
+        url: process.env.WEBHOOK_URL || process.env.WPP_WEBHOOK_URL || null,
         autoDownload: true,
         uploadS3: false,
         readMessage: true,
